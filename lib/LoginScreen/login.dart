@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:merc/Signup/RegisterMain.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -165,6 +166,13 @@ class LoginScreen extends StatelessWidget {
                     GestureDetector(
                       onTap: () {
                         // Handle sign-up navigation
+                              // Navigate to LoginScreen
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => RegisterScreen(),
+                    ),
+                  );
                       },
                       child: Text(
                         "Sign Up",
